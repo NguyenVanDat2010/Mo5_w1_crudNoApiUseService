@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/todomvc-app-css/index.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "crud-student"
+    }
+  },
+  "defaultProject": "crud-student",
+  "cli": {
+    "analytics": "b8cc4a59-cebc-48e0-8dcf-44f690769c48"
+  }
 }

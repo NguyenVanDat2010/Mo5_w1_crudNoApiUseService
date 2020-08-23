@@ -1,0 +1,45 @@
+<!-- <p>student works!</p> -->
+<!-- <form> -->
+  <h1>Create Student</h1>
+  <label>
+    <span>Name: </span>
+    <input type="text" placeholder="Full name" [(ngModel)]="student.name" autofocus> <br> <br>
+    <span>Gender: </span>
+    <select name="" id="" [(ngModel)]="student.gender" >
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select><br> <br>
+    <span>Age: </span>
+    <input type="number" placeholder="Age" [(ngModel)]="student.age" ><br><br>
+    <input type="submit" value="Create" (click)="addStudent()">
+    <input type="submit" value="Update" (click)="updateStudent()">
+  </label>
+<!-- </form> -->
+
+<hr>
+
+<!-- <form> -->
+  <h1>Student List</h1>
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Gender</td>
+        <td>Age</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+    </thead>
+    <tbody *ngFor="let student of students">
+      <tr>
+        <td><label>{{student.name}}</label></td>
+        <td><label>{{student.gender}}</label></td>
+        <td><label>{{student.age}}</label></td>
+        <td><input value="Edit" type="button" class="btn btn-dark" (click)= "showUpdateStd(student)"></td>
+        <td><input value="Delete" type="button" class="btn btn-danger" (click)= "destroyStudent(student)"></td>
+      </tr>
+    </tbody>
+  </table>
+<!-- </form> -->
+
